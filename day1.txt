@@ -1,7 +1,11 @@
-int score = 80;
+int score = 80;//declaring vairable  by its type integer and its name score and assign value to it 80.
 
-String result;
 
+String result; //declaring vairable by its name(result) and type (string) but not assign value to it .
+// create if statement to check if score = 80 it will set result to you passed,then else if to check the other 
+// condition we have score >80 it will set result to you did great and else if either both cases are not true it will 
+//set result to you didnot pass try again ..and the is print statement outside the if it will be excuted after if 
+//ends and print result .
 if (score == 80) {
 	result = "You passed!";
 } else if (score > 80) {
@@ -11,3 +15,5 @@ if (score == 80) {
 }
 
 System.out.println(result);
+//output will be :you passsed
+//gool of code checking result of certain score .
