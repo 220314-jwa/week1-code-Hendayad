@@ -1,18 +1,19 @@
-<html>
-	<head>
-		<title>Daily Code Review</title>
-	</head>
-	<body>
-		<h1>Cook your food!</h1>
-		<form action="http://localhost:8080/cook">
-			<label for="foodName">Food Name:</label>
-			<input id="foodName" name="foodName" type="text">
-			<br>
-			<button type="submit">Submit</button>
-		</form>
-	</body>
-</html>
-
+<html>//tag that everything goes into
+	<head>//tag that includes metadata like title or info about the page
+		<title>Daily Code Review</title> //main title of page descibe page
+	</head>//close tag for head
+	<body>// everything that user will see
+		<h1>Cook your food!</h1> heading on page 1 for largest format type 
+		<form action="http://localhost:8080/cook">//grouping together all input elements with submit button
+		// form hs 2 attrubutes action for URI uniform rescource idetifier
+			<label for="foodName">Food Name:</label> //label of the first input food name
+			<input id="foodName" name="foodName" type="text">// text box for user to type in 
+			<br>// to seperate input text box//new line
+			<button type="submit">Submit</button>//create button to submit input 
+		</form>//clsing tag form
+	</body>// clsing tag body
+</html>closing tag html
+// crate javalin object as before.
 public static void main(String[] args) {
 	Javalin app = Javalin.create();
 	app.start();
