@@ -1,22 +1,37 @@
-public class Food {
+  // create a public class named food inside this clas we create 2 instance fields (data that objects will have)
+ //.. string field named name a another one named type bpth have apublic access modifier so any one can access them.
+ // 
+ public class Food {
 	public String name;
 	public String type;
-
+// we create a constructor we can tell by same as class name ,and it is called overloaded constuctor as it takes starting info or 
+//arguments..
 	public Food(String name, String type) {
+
+public class Food {// public method that return no thing called cook 
+// instance fields name and type;
+	public String name;
+	public String type;
+wec create constructor which called overloaded constuctor because it load parameters
+	public Food(String name, String type) {
+		//we access instance fields name and type using this keyword which refer to current object in aconstructor
 		this.name = name;
 		this.type = type;
 	}
-
+//public method that returns nothing called cook
 	public void cook() {
+//check if name doesnot contain cooked word so add cooked word to name 		
 		if (!name.contains("cooked")) {
 			name = "cooked " + name;
 		}
 	}
 }
-
+//where our code starts
 public class Main {
 	public static void main(String[] args) {
+	//create aclass instance and pass potato and vegetable to it	
 		Food myFood = new Food("potato", "vegetable");
+	//call cook method object.method();	
 		myFood.cook();
 
 		System.out.println(myFood.name);
