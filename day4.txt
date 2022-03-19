@@ -1,12 +1,15 @@
-public class Main {
-	public static void main(String[] args) {
-		Javalin app = Javalin.create();
+public class Main {// create a class called Main
+	public static void main(String[] args) {// where my program start
+		Javalin app = Javalin.create();//create a javalin object
 
-		app.start();
+		app.start();// access a start amethod to start up aserver and 
 
+//start listening to https request.
+//method to tell app object how to response to a get aget request where url ends with /hello
 		app.get("foods", ctx -> {
+			//create  object food  and pass parameter into it 
 			Food myFood = new Food("carrots", "vegetable");
-			ctx.result("You got: " + myFood.name);
+			ctx.result("You got: " + myFood.name);//print you got object.field to acccess field
 		});
 	}
 }
