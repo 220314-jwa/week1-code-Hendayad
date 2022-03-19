@@ -1,26 +1,23 @@
-public static void main(String[] args) {
-	String[] foodTypes = getFoodTypes();
-	String myType = foodTypes[2];
+public static void main(String[] args) {// where our code starts 
+	String[] foodTypes = getFoodTypes();// access getfoodtypes  method
+	String myType = foodTypes[2];// assign my type vairable to third element in my foodtypes array 
 
-	String[] foodsOfMyType = getFoodsByType(myType);
-	
+	String[] foodsOfMyType = getFoodsByType(myType);// access getfood by type method an pass mytype prameter
+	//enhanced for loop that is iterates through element in array or collection
 	for (String food : foodsOfMyType) {
-		System.out.println(food);
+		System.out.println(food);// every it iterates through array it will printt food 
 	}
 }
 
-public static String[] getFoodTypes() {
-	String[] foodTypes = {"breakfast","lunch","dinner","dessert","snack"};
-	return foodTypes;
-}
-
-public static String[] getFoodsByType(String type) {
-	String[] foods = new String[3];
-
-	switch(type) {
-	case "breakfast":
-		foods[0] = "pancakes";
-		foods[1] = "cereal";
+public static String[] getFoodTypes() {// static method of array type called getfoodtypes
+	String[] foodTypes = {"breakfast","lunch","dinner","dessert","snack"};// create string array (object)of 5 elements
+	return foodTypes; //array returned  from a method by array return type
+public static String[] getFoodsByType(String type) {// static method 
+	String[] foods = new String[3];//create an array with 3 element 
+	switch(type) {//control flow to check some cases
+	case "breakfast"://in case of breakfast put element one in foods array to pancakes
+		foods[0] = "pancakes"; 
+		foods[1] = "cereal";//put ellement 2 to cereal
 		foods[2] = "omelette";
 		break;
 	case "lunch":
